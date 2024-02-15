@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+
+ul {
+    align-items: center;
+    text-align: center;
+    list-style-type: circle;
+    font-weight: 300;
+}
+
+
+li {
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.checkbox-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.custom-checkbox .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.custom-checkbox label {
+    margin-left: 10px;
+}
+/* Style for the form */
+#emailForm {
+    display: none;
+    margin-top: 20px;
+}
+
+
+.email-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+/* Style for the email input */
+.email-input {
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    border: none;
+}
+/* Style for the submit button */
+.submit-button {
+    padding: 8px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}

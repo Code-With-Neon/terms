@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News.gg Official Terms</title>
+    <link rel="icon" type="image/x-icon" href="/Images/News.gg.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <h1>Terms & Conditions</h1>
+    <p class="para">Welcome to News.gg Official! <br> <br>We appreciate your interest and kindly request that you carefully read and understand the following terms and conditions. It is essential to note that News.gg Official cannot be held responsible for any consequences arising from your use of our platform. By accessing and utilizing our services, you acknowledge and accept that certain content may be of an adult nature, including but not limited to News Command and Memes.
+
+        As a user, you are responsible for exercising discretion and ensuring that your engagement with our platform aligns with your personal preferences and boundaries. We aim to provide diverse content, which may include adult-oriented material. News.gg Official endeavors to maintain a platform that caters to a broad audience, but users are encouraged to be aware of the content they consume.
+        
+        It is crucial to recognize that, while we strive to create an enjoyable and informative experience, individual preferences vary. By continuing to use News.gg Official, you signify your understanding and acceptance of these terms and conditions. Your discretion and responsible usage are key to navigating our platform seamlessly. If you have any concerns or questions, feel free to contact our support team. Thank you for being a part of the News.gg Official community.
+        
+        
+        
+        
+        
+        </p>
+
+        <div class="checkbox-box">
+            <!-- Custom-styled checkbox for agreement with terms -->
+            <label class="custom-checkbox">
+                <input type="checkbox" id="agreeCheckbox">
+                <span class="checkmark" id="btn3"></span>
+                <span class="label-text">I agree to the terms and conditions</span>
+            </label>
+        </div>
+
+
+
+
+
+
+</div>
+
+<footer>
+
+
+
+
+    <p>Email: vortexviperyofficial@gmail.com</p>
+    <p>Discord Server: <a href="https://discord.gg/6dTKUxXPJg">News.gg Official</a></p>
+    <p>Youtube Channel: <a href="https://www.youtube.com/@iazoNRG">iazo</a></p>
+    <p>Connect with Discord: <a href="https://discord.com/oauth2/authorize?client_id=1161632275147014226&scope=identify&response_type=code&redirect_uri=http://127.0.0.1:5500/terms.html" target="_blank" onclick="showDiscordInfo()">Authorize</a></p>
+
+    <form method="post">
+        <label class="label"  for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input class="input"  id="btn2" type="submit">
+      </form>
+    
+
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>  
+
+   var btn2 = document.getElementById("btn2")
+   btn2.addEventListener('click', function(e){
+    e.preventDefault()
+    console.log("2+2")
+    Email.send({
+    Host: 'smtp.elasticemail.com',
+    Username: 'vortexviperyofficial@gmail.com',
+    Password: 'F32B87A38F407F90B361215DEA20F844A99F',
+    To: document.getElementById("email").value,
+    From: 'vortexviperyofficial@gmail.com',
+    Subject: 'Terms',
+    Body: 'Terms & Conditions Welcome to News.gg Official! We appreciate your interest and kindly request that you carefully read and understand the following terms and conditions. It is essential to note that News.gg Official cannot be held responsible for any consequences arising from your use of our platform. By accessing and utilizing our services, you acknowledge and accept that certain content may be of an adult nature, including but not limited to News Command and Memes. As a user, you are responsible for exercising discretion and ensuring that your engagement with our platform aligns with your personal preferences and boundaries. We aim to provide diverse content, which may include adult-oriented material. News.gg Official endeavors to maintain a platform that caters to a broad audience, but users are encouraged to be aware of the content they consume. It is crucial to recognize that, while we strive to create an enjoyable and informative experience, individual preferences vary. By continuing to use News.gg Official, you signify your understanding and acceptance of these terms and conditions. Your discretion and responsible usage are key to navigating our platform seamlessly. If you have any concerns or questions, feel free to contact our support team. Thank you for being a part of the News.gg Official community.'
+}).then(
+    message => alert(message)
+);
+   }) 
+</script>
+
+</body>
+</html>
